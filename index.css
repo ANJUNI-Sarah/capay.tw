@@ -3,11 +3,11 @@ html{
     font-family: sans-serif;
 }
 
-form{
-    direction: rtl;
-}
 
-input{
+.more{
+    position: absolute;
+    right: 0;
+    bottom: 0;
     font-size: 16px;
     font-weight: 600;
     display: block;
@@ -17,20 +17,26 @@ input{
     border-radius: 40px;
     border: none;
     color: #ffff;
-    align-items: center;
+    text-align: center;
     line-height: 50px;
     text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
     box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
 }
 
-input:hover{
+.more:hover{
     transform: scale(1.05);
 }
 
 
+
+
+
+/*  */
+
 .main-header{
+    z-index: 10;
     position: sticky;
-    z-index: 20;
     top:0;
     left:0;
     background-color: #3A4161 ;
@@ -91,6 +97,33 @@ input:hover{
     text-decoration:solid
 }
 
+
+
+
+/* login */
+
+#login-lightBox{
+
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 50;
+}
+
+#lightBox{
+    width: 300px;
+    position: absolute;
+    top: 30%;
+    right: 0;
+    bottom: 25%;
+    left: 0;
+    margin:auto;
+    background-color: #ffff;
+    display: flex;
+
+}
+/*  */
 
 
 .main-banner-wrap{
@@ -343,9 +376,6 @@ input:hover{
     display: block;
 
 }
-.user-manual-content-step h2{
-}
-
 
 
 
@@ -355,7 +385,9 @@ input:hover{
 
 
 .sale{
-    padding: 100px 0px;}
+    padding: 100px 0px;
+    position: relative;
+}
 
 
 .sale-wrap-msg{
@@ -365,6 +397,7 @@ input:hover{
     line-height: 1.5;
 }
 
+
 .sale-header h1{
     font-size: 50px;
     font-weight: 600;
@@ -372,6 +405,10 @@ input:hover{
 .sale-header p{
     font-size: 24px;
     font-weight: 550;
+}
+
+.sale-item-container{
+    display: flex;
 }
 
 .sale-content{
@@ -386,13 +423,18 @@ input:hover{
     transition:all 0.5s
 }
 
-.sale-content-item{
-    display: flex;
+.sale-content:hover {
+    box-shadow:1px 1px 15px rgba(0, 0, 0, 0.35);
+}
+
+
+.sale-item-a{
+    text-decoration: none;
 }
 
 .sale-content-item-pic{
-    width: 600px;
-    height: 300px;
+    width: 300px;
+    height: 150px;
     border: #3a4161 3px solid;
     box-shadow:1px 1px 6px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
@@ -402,7 +444,6 @@ input:hover{
 
 .sale-content-item-pic img{
     width: 100%;
-    height: 100%;
     vertical-align: top;
     transition: 0.5s;
 }
@@ -410,30 +451,37 @@ input:hover{
 
 
 .sale-content-item-detail{
-    margin: auto;
-    color: #ffff;
-    background-color: #3a4161;
-    padding: 20px;
+    color: #3a4161;
+    padding: 10px 10px 30px 10px;
     border-radius: 25px;
-    box-shadow:rgba(0, 0, 0, 0.5) 1px 1px 6px; 
-    text-shadow:rgba(0, 0, 0, 0.5) 1px 1px 6px;
-    
+    position: relative;
 
 }
 
 .sale-content-item-detail h2{
     font-size: 20px;
     font-weight: 600;
+    text-align: center;
+    padding: 10px 3px;
 }
+
 
 .sale-content-item-detail a{
     font-size: 15px;
     color:#FFB67D;
-    }
+    
+}
+
+.sale-content-item-detail p{
+    font-size: 14px;
+}
 
 .sale-content-item-detail-a{
-    display: flex;
-    justify-content: end;
+    font-size: 14px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-decoration: 2px underline #3A4161;
 }
 
 
@@ -441,12 +489,16 @@ input:hover{
 
 
 
+/*  */
+
+.themes-container{
+    display: flex;
+}
 
 
 
 .about-us{
-    padding: 100px 0px;
-    
+    padding: 100px 5px 10px 10px;
 }
 
 
@@ -466,10 +518,16 @@ input:hover{
 }
 
 .about-us-wrap-msg{
-    width: 1140px;
     margin: auto;
     padding: 70px 0px;
     line-height: 1.5;
+    text-align: center;
+}
+
+.about-us-wrap-msg .more{
+    background-color: #0000;
+    box-shadow: none;
+    text-decoration: 2px underline #ffff;
 }
 
 
@@ -478,18 +536,16 @@ input:hover{
 }
 
 .about-us-header h1{
-    font-size: 55px;
+    font-size: 40px;
     font-weight: 600;
     text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
-    text-align: center;
-    
 }
 
 .about-us-header p{
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 550;
     text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
-    text-align: center;
+
 }
 
 
@@ -498,7 +554,7 @@ input:hover{
 
 
 .merchant{
-    padding: 100px 0px;
+    padding: 100px 10px 10px 5px;
 }
 
 .merchant-wrap{
@@ -518,11 +574,19 @@ input:hover{
 
 
 .merchant-wrap-msg{
-    width: 1140px;
+    text-align: center;
     margin: auto;
     padding: 70px 0px;
     line-height: 1.5;
 }
+
+
+.merchant-wrap-msg .more{
+    background-color: #0000;
+    box-shadow: none;
+    text-decoration: 2px underline #ffff;
+}
+
 
 .merchant-header{
     color: #ffff;
@@ -530,14 +594,14 @@ input:hover{
 }
 
 .merchant-header h1{
-    font-size: 55px;
+    font-size: 40px;
     font-weight: 600;
     text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
     
 }
 
 .merchant-header p{
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 550;
     text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
 }

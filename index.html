@@ -6,11 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CA PAY</title>
     <link rel="stylesheet" type="text/css" href="./reset.CSS">
+    <link rel="stylesheet" type="text/css" href="./grid.css">
     <link rel="stylesheet" type="text/css" href="./index.css">
+    
 </head>
 
 
 <body>
+    <div id="login-lightBox">
+        <div id="lightBox">
+            <div class="shop-login">
+                <p>帳號</p>
+                <input type="text" id="account">
+                <p>密碼</p>
+                <input type="text" id="password">
+                <a href="">忘記密碼</a>
+                <button type="sumit" id="check">
+                    登入
+                </button>
+            </div>
+            <a href="" >還不是合作商家</a>
+        </div>
+    </div>
+    
     <header class="main-header">
         <div class="main-header-wrap">
             <div class="main-header-logo">
@@ -29,6 +47,9 @@
             </nav>
         </div>
     </header>
+
+
+    
 
     
 
@@ -98,9 +119,9 @@
                         </div>
                     </div>
                 </div>
-                <form action="./product.html">
-                    <input type="submit" value="查看更多" >
-                </form>
+                <a class="more" href="./product.html">
+                    查看更多
+                </a>
             </div>
         </div>
     </section>
@@ -136,9 +157,9 @@
                         <h2>完成付款</h2>
                     </div>
                 </div>
-                <form action="./product.html">
-                    <input type="submit" value="如何註冊" >
-                </form>
+                <a class="more" href="./product.html">
+                    如何註冊
+                </a>
             </div>
         </div>
     </section>
@@ -147,12 +168,13 @@
     <section class="sale">
         <div class="sale-wrap">
             <img class="sale-pic" src="" alt="">
-                <div class="sale-wrap-msg">
+                <div class="sale-wrap-msg ">
                     <header class="sale-header">
                         <h1>除了方便、還很優惠</h1>
                         <p>無須"金金"計較，簡單即可擁有回饋小確幸</p>
                     </header>
-                        <a href="">
+                    <div class="sale-item-container">
+                        <a class="sale-item-a" href="">
                             <div class="sale-content">
                                 <div class="sale-content-item">
                                     <div class="sale-content-item-pic">
@@ -160,54 +182,98 @@
                                     </div>
                                     <div class="sale-content-item-detail">
                                         <h2>日貨大賞-消費即享10%回饋</h2>
-                                        <p>3/21-3/28</p>
+                                        <p>活動日期：2022/3/21-2022/3/28</p>
+                                        <p>活動說明</p>
+                                        <p>1.本活動期間內正附卡消費合併計算。<br>
+                                        2.正卡人務必每月至本公司會員服務頁面完成活動登錄。<br>3.本活動刷卡金回饋以每月登錄名單為計算基準。</p>
                                         <div class="sale-content-item-detail-a">
-                                            活動詳情
+                                            活動詳情>>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </a>
-                    <form action="./events.html">
-                        <input type="submit" value="更多活動" >
-                    </form>
+                        <a class="sale-item-a" href="">
+                            <div class="sale-content">
+                                <div class="sale-content-item">
+                                    <div class="sale-content-item-pic">
+                                        <img src="./img/index-ad-01.jpg">
+                                    </div>
+                                    <div class="sale-content-item-detail">
+                                        <h2>日貨大賞-消費即享10%回饋</h2>
+                                        <p>活動日期：2022/3/21-2022/3/28</p>
+                                        <p>活動說明</p>
+                                        <p>1.本活動期間內正附卡消費合併計算。<br>
+                                        2.正卡人務必每月至本公司會員服務頁面完成活動登錄。<br>3.本活動刷卡金回饋以每月登錄名單為計算基準。</p>
+                                        <div class="sale-content-item-detail-a">
+                                            活動詳情>>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="sale-item-a" href="">
+                            <div class="sale-content">
+                                <div class="sale-content-item">
+                                    <div class="sale-content-item-pic">
+                                        <img src="./img/index-ad-01.jpg">
+                                    </div>
+                                    <div class="sale-content-item-detail">
+                                        <h2>日貨大賞-消費即享10%回饋</h2>
+                                        <p>活動日期：2022/3/21-2022/3/28</p>
+                                        <p>活動說明</p>
+                                        <p>1.本活動期間內正附卡消費合併計算。<br>
+                                        2.正卡人務必每月至本公司會員服務頁面完成活動登錄。<br>3.本活動刷卡金回饋以每月登錄名單為計算基準。</p>
+                                        <div class="sale-content-item-detail-a">
+                                            活動詳情>>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <a class="more" href="./events.html">
+                        更多活動
+                    </a>
                 </div>
         </div>
     </section>
 
 
-    <section class="about-us">
-        <div class="about-us-wrap">
-            <img class="about-us-pic" src="./img/shutterstock_1585110922.jpg">
-                <div class="about-us-wrap-msg">
-                    <header class="about-us-header">
-                        <h1>消費可以不只是消費</h1>
-                        <p>認識CA PAY、<br>
-                        與我們一同加入支持在地商家的行列!</p>
-                    </header>
-                    <form action="./shopmap.html">
-                        <input type="submit" value="關於我們" >
-                    </form>
-                </div>
-        </div>
-    </section>
+    <div class="themes-container">
+        <section class="about-us col-6">
+            <div class="about-us-wrap">
+                <img class="about-us-pic" src="./img/shutterstock_1585110922.jpg">
+                    <div class="about-us-wrap-msg">
+                        <header class="about-us-header">
+                            <h1>消費可以不只是消費</h1>
+                            <p>認識CA PAY、<br>
+                            與我們一同加入支持在地商家的行列!</p>
+                        </header>
+                        <a class="more" href="./shopmap.html">
+                            關於我們>>
+                        </a>
+                    </div>
+            </div>
+        </section>
 
 
-    <section class="merchant">
-        <div class="merchant-wrap">
-            <img class="merchant-pic" src="./img/shutterstock_1702865887.jpg">
-                <div class="merchant-wrap-msg">
-                    <header class="merchant-header">
-                        <h1>創業的夢想，CA PAY幫助你</h1>
-                        <p>專業顧問諮詢、收款更便利，<br>
-                        讓我們協助您，讓您的金流更安全。</p>
-                    </header>
-                    <form action="">
-                        <input type="submit" value="店家專區" >
-                    </form>
-                </div>
-        </div>
-    </section>
+        <section class="merchant col-6">
+            <div class="merchant-wrap ">
+                <img class="merchant-pic" src="./img/shutterstock_1702865887.jpg">
+                    <div class="merchant-wrap-msg">
+                        <header class="merchant-header">
+                            <h1>創業的夢想，CA PAY幫助你</h1>
+                            <p>專業顧問諮詢、收款更便利，<br>
+                            讓我們協助您，讓您的金流更安全。</p>
+                        </header>
+                        <a class="more" href="">
+                            店家專區>>
+                        </a>
+                    </div>
+            </div>
+        </section>
+    </div>
 
 
     <footer class="main-footer">
