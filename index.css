@@ -84,7 +84,7 @@ html{
     text-shadow:rgba(0, 0, 0, 0.5) 1px 1px 6px;
 }
 
-.main-nav-list a.shopbox{
+.main-nav-list #shopbox{
     font-size: 14px;
     border: rgba(255, 255, 255, 0.5) solid 1px;
     border-radius: 5px;
@@ -97,22 +97,36 @@ html{
     text-decoration:solid
 }
 
+#shopbox{
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffff;
+    text-shadow:rgba(0, 0, 0, 0.5) 1px 1px 6px;
+}
+
+#shopbox:hover{
+    color: #FFB67D;
+    text-decoration:solid
+}
 
 
 
 /* login */
 
-#login-lightBox{
 
+#login-lightBox{
+    display: none;
     position: fixed;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: 50;
+    z-index: 30;
 }
 
 #lightBox{
     width: 300px;
+    padding: 30px;
     position: absolute;
     top: 30%;
     right: 0;
@@ -120,9 +134,22 @@ html{
     left: 0;
     margin:auto;
     background-color: #ffff;
-    display: flex;
-
+    border-radius: 10px;
 }
+
+#cancel{
+    font-size: 20px;
+    /* transform: rotate(45deg); */
+    background-color: #3A4161;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 26px;
+    height: 26px;
+    border-radius:13px ;
+    text-align: center;
+}
+
 /*  */
 
 
