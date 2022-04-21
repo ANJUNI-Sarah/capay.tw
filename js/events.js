@@ -1,0 +1,12 @@
+//login//
+$(document).ready(function(){
+    $('#shopbox').click(function(){
+        $('#login-lightBox').css('display','block')
+    });
+    $('#cancel,#login-lightBox').click(function(){
+        $('#login-lightBox').css('display','none')
+    });
+    $('#lightBox').click(function(lightBox){
+        lightBox.stopPropagation();
+    })
+})
