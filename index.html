@@ -9,22 +9,7 @@
     <link rel="stylesheet" type="text/css" href="./grid.css">
     <link rel="stylesheet" type="text/css" href="./index.css">
     <script src="./js/jquery-3.6.0.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('#shopbox').click(function(){
-                $('#login-lightBox').css('display','block')
-            });
-            $('#cancel,#login-lightBox').click(function(){
-                $('#login-lightBox').css('display','none')
-            });
-            $('#lightBox').click(function(lightBox){
-                lightBox.stopPropagation();
-            })
-        })
-
-
-    </script>
-    
+    <script src="./js/index.js"></script>
 </head>
 
 
@@ -32,18 +17,26 @@
     <div id="login-lightBox">
         <div id="lightBox">
             <div class="shop-login">
-                <p>帳號</p>
-                <input type="text" id="account">
-                <p>密碼</p>
-                <input type="text" id="password">
-                <a href=""><p>忘記密碼</p></a>
+                <img src="./img/personl-web-logo3.png">
+                <p>店家登入</p>
+                <div class="input-wrap">
+                    <input type="text" id="account" maxlength="16">
+                    <label>請輸入電話或設定的帳號</label>
+                    <div></div>
+                </div>
+                <div class="input-wrap">
+                    <input type="text" id="password" maxlength="16">
+                    <label>密碼</label>
+                    <div></div>
+                </div>
+                <a href="" class="forget-password">忘記密碼</a>
                 <button type="sumit" id="check">
                     登入
                 </button>
-                <a href="" >還不是合作商家</a>
+                <a href="" class="not-merchant">了解合作商家內容</a>
             </div>
             <button id="cancel">
-                X
+                +
             </button>
         </div>
     </div>
@@ -68,14 +61,16 @@
     </header>
 
 
-    
-
-    
 
     
     <section class="main-banner">
             <div class="main-banner-wrap">
-                <img class="main-banner-pic" src="./img/shutterstock_148607416702.jpg">
+                <!-- <div class="main-banner-pic-wrap"> -->
+                    <img class="main-banner-pic" src="./img/shutterstock_148607416702.jpg">
+                    <img class="main-banner-pic" src="https://picsum.photos/300/200/?random=10">
+                    <img class="main-banner-pic" src="https://picsum.photos/300/200/?random=9">
+                <!-- </div> -->
+
                 <div class="main-banner-title">
                     <h1>CA&ensp;PAY</h1>
                     <h2>最聰明的付款、<br>
