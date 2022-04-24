@@ -40,8 +40,16 @@
 .main-nav-list{
     display: flex;
     align-items: center;
-
 }
+
+.hb{
+    display: none;
+}
+
+.mobile-main-nav{
+    display: none;
+}
+
 
 .main-nav-list a{
     padding: 10px;
@@ -76,6 +84,96 @@
     color: #FFB67D;
     text-decoration:solid
 }
+
+
+/* RWD */
+
+
+@media screen and (max-width: 768px){
+    
+
+
+
+
+}
+
+
+@media screen and (max-width: 996px){
+    .hb{
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 12px;
+    }
+
+    .main-nav{
+        display: none;
+    }
+
+
+    .main-header-logo{
+        width: 28px;
+        height: 12px;
+        align-items:center;
+        margin: auto;
+    }
+
+    .main-header-wrap{
+        width: 100%;
+        position: relative;
+    }
+
+
+    .mobile-main-nav{
+        display: block;
+        position: absolute;
+        top: 32px;
+        left: 0px;
+        width:50% ;
+        background-color: #ffff;
+        z-index: 100;
+    }
+
+    .hb-main-nav-list{
+        padding: 20px;
+    }
+
+    .hb-main-nav-list li{
+        font-size: 20px;
+        padding: 10px 0px;
+        
+    }
+
+    .hb-main-nav-list a{
+        color: #3A4161;
+        text-decoration: none;
+    }
+
+    #shopbox{
+        color: #3A4161;
+        font-size: 20px;
+        padding: 10px 0px;
+        text-shadow: none;
+    }
+
+
+
+
+
+
+
+
+}
+
+
+
+@media screen and (max-width: 1200px){
+   
+
+
+}
+
 
 
 

@@ -26,9 +26,7 @@
             $('.main-banner-pic:nth-child('+arr[j%arr.length]+')').removeClass('fade-in')
             j++;
         }
-        time=setInterval(change,7000)
-        function scroll(){
-            console.log(window.scrollY);
-        }
+        time=setInterval(change,7000);
+        
             
-    window.addEventListener("scroll",scroll,false);
+    

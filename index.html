@@ -11,6 +11,74 @@
     <link rel="stylesheet" type="text/css" href="./css/nav_footer.css">
     <script src="./js/jquery-3.6.0.js"></script>
     <script src="./js/index.js"></script>
+
+    <script>
+
+    // function fadeTo(){
+    //     let els=$('.target')
+    //     let elsHight=[];
+    //     let windowBottom =$(window).scrollTop()+$(window).height()
+
+    //     for(i=0;i<els.length;i++){
+    //     elsHight.push(els.eq(i).offset().top)}
+    
+    
+
+    //     function judge(){
+    //         for(let j=0; j<=elsHight.length;j++){
+    //         if (elsHight[j]<=windowBottom) {
+    //         els.eq(i).fadeTo(1000,1)}}}
+
+    //     };
+        
+    //     // $(window).on('load',judge())
+        
+    
+    //     // $(window).on('load',fadeTo())
+    //     $(window).scroll(fadeTo());
+
+        function fadeTo(){
+            let els=$('.fadeTo')
+
+            for(let j=0; j<els.length;j++){
+                if(els.eq(j).offset().top<=$(window).scrollTop()+$(window).height()) {
+                    els.eq(j).fadeTo(600,1)}
+                else{els.eq(j).css(
+                    'opacity', '0'
+                )}
+            }
+        }
+
+        function fadeOut(){
+            let els=$('.fadeOut')
+
+            for(let j=0; j<els.length;j++){
+                if(els.eq(j).offset().top<=$(window).scrollTop()+$(window).height()) {
+                    els.eq(j).fadeTo(1000,1)
+                }
+                else{els.eq(j).css(
+                    'opacity', '0'
+                )}
+            }
+           
+        }
+        
+
+
+
+        $(window).scroll(fadeTo)
+        $(window).scroll(fadeOut)
+
+        
+        
+    
+        
+
+
+        
+
+        
+    </script>
 </head>
 
 
@@ -47,7 +115,7 @@
             <div class="main-header-logo">
                 <h1><a href="./index.html">
                     <img src="./img/personl-web-logo3.png">
-                </h1></a>
+                </a></h1>
             </div>
             <nav class="main-nav">
                 <ul class="main-nav-list">
@@ -58,8 +126,21 @@
                     <li id="shopbox">店家專區</li>
                 </ul>
             </nav>
+            <div class="hb">
+                H
+            </div>
         </div>
     </header>
+
+    <div class="mobile-main-nav">
+        <ul class="hb-main-nav-list">
+            <li><a href="./product.html">產品介紹</a></li>
+            <li><a href="./events.html">優惠活動</a></li>
+            <li><a href="./shopmap.html">商家地圖</a></li>
+            <li><a href="./customer-service.html">常見問題</a></li>
+            <li id="shopbox">店家專區</li>
+        </ul>
+    </div>
 
 
 
@@ -94,14 +175,14 @@
 
 
     <section class="service">
-        <div class="service-wrap">
-            <div class="service-wrap-msg">
+        <div class="service-wrap fadeTo">
+            <div class="service-wrap-msg ">
                 <header class="service-header">
-                    <h1>手機就是錢包，消費超簡單</h1>
-                    <p>為什麼你需要CA PAY?</p>
+                    <h1 class="fadeTo">手機就是錢包，消費超簡單</h1>
+                    <p class="fadeTo">為什麼你需要CA PAY?</p>
                 </header>
                 <div class="service-content">
-                    <div class="service-content-msg">
+                    <div class="service-content-msg fadeTo">
                         <div class="service-content-msg-pic">
                             <img src="./img/icon-07.jpg">
                         </div>
@@ -109,7 +190,7 @@
                             <h2>下載APP、簡訊驗證註冊超快速。</h2>
                         </div>
                     </div>
-                    <div class="service-content-msg">
+                    <div class="service-content-msg fadeTo">
                         <div class="service-content-msg-pic">
                             <img src="./img/icon-05.jpg">
                         </div>
@@ -117,7 +198,7 @@
                             <h2>嚴格控管買賣付款程序，安心購物有保障。</h2>
                         </div>
                     </div>
-                    <div class="service-content-msg">
+                    <div class="service-content-msg fadeTo">
                         <div class="service-content-msg-pic">
                             <img src="./img/icon-02.jpg">
                         </div>
@@ -125,7 +206,7 @@
                             <h2>使用服務的商家眾多，查詢好方便。</h2>
                         </div>
                     </div>
-                    <div class="service-content-msg">
+                    <div class="service-content-msg fadeTo">
                         <div class="service-content-msg-pic">
                             <img src="./img/icon-04.jpg">
                         </div>
@@ -143,12 +224,12 @@
 
 
     <section class="user-manual">
-        <div class="user-manual-wrap">
+        <div class="user-manual-wrap fadeTo">
             <img class="user-manual-pic" src="./img/shutterstock_1492617800.jpg" alt="">
             <div class="user-manual-wrap-msg">
                 <header class="user-manual-header">
-                    <h1>簡單操作，付款可以是一種享受</h1>
-                    <p>告別掏錢、找零的尷尬，支付展現你的態度</p>
+                    <h1 class="fadeTo">簡單操作，付款可以是一種享受</h1>
+                    <p class="fadeTo">告別掏錢、找零的尷尬，支付展現你的態度</p>
                 </header>
                 <div class="user-manual-content">
                     <div class="user-manual-content-step">
@@ -185,8 +266,8 @@
             <img class="sale-pic" src="" alt="">
                 <div class="sale-wrap-msg ">
                     <header class="sale-header">
-                        <h1>除了方便、還很優惠</h1>
-                        <p>無須"金金"計較，簡單即可擁有回饋小確幸</p>
+                        <h1 class="fadeTo">除了方便、還很優惠</h1>
+                        <p class="fadeTo">無須"金金"計較，簡單即可擁有回饋小確幸</p>
                     </header>
                     <div class="sale-item-container">
                         <a class="sale-item-a" href="">
@@ -257,7 +338,7 @@
 
     <div class="themes-container">
         <section class="about-us col-6">
-            <div class="about-us-wrap">
+            <div class="about-us-wrap ">
                 <img class="about-us-pic" src="./img/shutterstock_1585110922.jpg">
                     <div class="about-us-wrap-msg">
                         <header class="about-us-header">

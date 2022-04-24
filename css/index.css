@@ -3,6 +3,9 @@ html{
     font-family: sans-serif;
 }
 
+.target{
+    opacity: 0;
+}
 
 .more{
     position: absolute;
@@ -30,9 +33,7 @@ html{
 
 
 
-
-
-/*  */
+/* main-banner */
 
 
 .main-banner-wrap{
@@ -112,15 +113,16 @@ animation-name: in;
 }
 
 
-
+/* service */
 
 
 .service{
     padding: 100px 0px 200px 0px;
-    background-image: url(./img/bg.jpg);
+    background-image: url(../img/bg.jpg);
     background-repeat:no-repeat;
     background-position:center;
     background-size:100%;
+    
 }
 
 .service-wrap{
@@ -154,6 +156,7 @@ animation-name: in;
 }
 .service-wrap-msg p{
     font-size: 24px;
+    
 }
 
 .service-content{
@@ -196,6 +199,7 @@ animation-name: in;
 }
 
 .service-content-msg-text{
+    
     width: 243px;
     padding: 10px;
 }
@@ -236,7 +240,7 @@ animation-name: in;
 
 
 
-
+/* user-manual */
 
 
 
@@ -307,7 +311,7 @@ animation-name: in;
 
 
 
-
+/* sale */
 
 
 
@@ -415,8 +419,8 @@ animation-name: in;
 
 
 
+/* about-us、merchant */
 
-/*  */
 
 .themes-container{
     display: flex;
@@ -424,14 +428,23 @@ animation-name: in;
 
 
 
+/* about-us */
+
 .about-us{
     padding: 100px 5px 10px 10px;
 }
 
 
 .about-us-wrap{
+    border-radius: 10px ;
+    overflow: hidden;
     position: relative;
-    background-color: rgba(0, 0, 0, 0.6);
+    /* background-color: rgba(0, 0, 0, 0.6); */
+}
+
+.about-us-wrap:hover{
+    background-color: rgba(0, 0, 0, 0.4)
+
 }
 
 .about-us-pic{
@@ -477,7 +490,7 @@ animation-name: in;
 
 
 
-
+/* merchant */
 
 
 .merchant{
@@ -485,10 +498,17 @@ animation-name: in;
 }
 
 .merchant-wrap{
+    border-radius: 10px ;
+    overflow: hidden;
     position: relative;
-    background: linear-gradient(90deg,rgb(0, 0, 0,0.8),#0000 50%);
+    /* background: linear-gradient(90deg,rgb(0, 0, 0,0.8),#0000 50%); */
+}
+
+.merchant-wrap:hover{
+    background-color: rgba(0, 0, 0, 0.4)
 
 }
+
 .merchant-pic{
     width: 100%;
     height: 100%;
@@ -536,6 +556,58 @@ animation-name: in;
 
 
 
+/* RWD */
+
+
+@media screen and (max-width: 768px){
+    .main-banner-title{
+        width:100%;
+    }
+
+    .main-banner-title h1{
+        font-size: 25px;
+    }
+
+    .main-banner-title h2{
+        font-size: 18px;
+    }
+
+
+
+
+
+}
+
+
+@media screen and (max-width: 996px){
+    .main-banner-title{
+        width:750 px;
+    }
+
+    .main-banner-title h1{
+        font-size: 50px;
+    }
+
+    
+
+
+}
+
+
+
+@media screen and (max-width: 1200px){
+    .main-banner-title{
+        width: 950px;
+    }
+
+    .main-banner-title h1{
+        font-size: 60px;
+    }
+
+
+
+
+}
 
 
 
