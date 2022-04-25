@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="./css/events.css">
     <link rel="stylesheet" type="text/css" href="./css/nav_footer.css">
     <script src="./js/jquery-3.6.0.js"></script>
+    <script src="./js/nav.js"></script>
     <script src="./js/events.js"></script>
 </head>
 <body>
@@ -44,7 +45,7 @@
             <div class="main-header-logo">
                 <h1><a href="./index.html">
                     <img src="./img/personl-web-logo3.png">
-                </h1></a>
+                </a></h1>
             </div>
             <nav class="main-nav">
                 <ul class="main-nav-list">
@@ -55,8 +56,23 @@
                     <li id="shopbox">店家專區</li>
                 </ul>
             </nav>
+            <div class="hb">
+                <img src="https://img.icons8.com/external-jumpicon-line-ayub-irawan/32/000000/external-hamburger-basic-ui-jumpicon-line-jumpicon-line-ayub-irawan.png"/>
+            </div>
         </div>
     </header>
+
+    <div class="mobile-main-nav-bg">
+        <div class="mobile-main-nav">
+            <ul class="hb-main-nav-list">
+                <li><a href="./product.html">產品介紹</a></li>
+                <li><a href="./events.html">優惠活動</a></li>
+                <li><a href="./shopmap.html">商家地圖</a></li>
+                <li><a href="./customer-service.html">常見問題</a></li>
+                <li id="shopbox2">店家專區</li>
+            </ul>
+        </div>
+    </div>
 
     <div class="events-banner">
         <div class="events-banner-wrap">
@@ -124,7 +140,7 @@
 
     <div class="events-filter">
         <div class="container">
-            <div class="events-filter-tool">
+            <div class="events-filter-tool fadeTo">
                 <h1>
                     活動搜尋
                 </h1>
@@ -157,14 +173,14 @@
         
             <div class="events-group">
                 <div class="events-group-month">
-                    <h3>2022年4月</h3>
+                    <h3 class="fadeTo">2022年4月</h3>
                     <div class="events-item-wrap">
-                        <div class="events-item">
+                        <div class="events-item fadeTo">
                             <h4>OWNDAYS 回饋5%</h4>
                             <p>4/1-4/2</p>
                             <img src="./img/event-11.jpg">
                         </div>
-                        <div class="events-item">
+                        <div class="events-item fadeTo">
                             <h4>銀行4月優惠</h4>
                             <p>4/1-4/30</p>
                             <img src="./img/event-13.jpg">
@@ -172,9 +188,9 @@
                     </div>
                 </div>
                 <div class="events-group-month">
-                    <h3>2022年5月</h3>
+                    <h3 class="fadeTo">2022年5月</h3>
                     <div class="events-item-wrap">
-                        <div class="events-item">
+                        <div class="events-item fadeTo">
                             <h4>NITORI 回饋3%</h4>
                             <p>5/1-5/30</p>
                             <img src="./img/event-12.jpg">
@@ -242,15 +258,15 @@
                 <ul class="footer-nav-social">
                     <li><h3>官方社群</h3></li>
                     <li><a href="" title="capay-facebook">
-                        <img src="./img/fb_facebook logo_icon.png">
+                        <img src="./img/fb_facebook logo_icon.jpg">
                     </a></li>
 
                     <li><a href="" title="capay-teitter">
-                        <img src="./img/twitter logo_icon.png">
+                        <img src="./img/twitter logo_icon.jpg">
                     </a></li>
 
                     <li><a href="" title="capay-youtube">
-                        <img src="./img/yt_youtube logo_icon.png">
+                        <img src="./img/yt_youtube logo_icon.jpg">
                     </a></li>
                 </ul>
                 <ul class="footer-nav-app">

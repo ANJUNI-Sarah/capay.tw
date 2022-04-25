@@ -11,76 +11,9 @@
     <link rel="stylesheet" type="text/css" href="./css/nav_footer.css">
     
     <script src="./js/jquery-3.6.0.js"></script>
+    <script src="./js/nav.js"></script>
     <script src="./js/index.js"></script>
 
-
-    <script>
-
-    // function fadeTo(){
-    //     let els=$('.target')
-    //     let elsHight=[];
-    //     let windowBottom =$(window).scrollTop()+$(window).height()
-
-    //     for(i=0;i<els.length;i++){
-    //     elsHight.push(els.eq(i).offset().top)}
-    
-    
-
-    //     function judge(){
-    //         for(let j=0; j<=elsHight.length;j++){
-    //         if (elsHight[j]<=windowBottom) {
-    //         els.eq(i).fadeTo(1000,1)}}}
-
-    //     };
-        
-    //     // $(window).on('load',judge())
-        
-    
-    //     // $(window).on('load',fadeTo())
-    //     $(window).scroll(fadeTo());
-
-        function fadeTo(){
-            let els=$('.fadeTo')
-
-            for(let j=0; j<els.length;j++){
-                if(els.eq(j).offset().top<=$(window).scrollTop()+$(window).height()) {
-                    els.eq(j).fadeTo(600,1)}
-                else{els.eq(j).css(
-                    'opacity', '0'
-                )}
-            }
-        }
-
-        function fadeOut(){
-            let els=$('.fadeOut')
-
-            for(let j=0; j<els.length;j++){
-                if(els.eq(j).offset().top<=$(window).scrollTop()+$(window).height()) {
-                    els.eq(j).fadeTo(1000,1)
-                }
-                else{els.eq(j).css(
-                    'opacity', '0'
-                )}
-            }
-           
-        }
-        
-
-
-
-        $(window).scroll(fadeTo)
-        $(window).scroll(fadeOut)
-
-        
-        
-    
-        
-
-
-        
-
-        
-    </script>
 </head>
 
 
@@ -153,8 +86,8 @@
             <div class="main-banner-wrap">
                 <!-- <div class="main-banner-pic-wrap"> -->
                     <img class="main-banner-pic" src="./img/shutterstock_148607416702.jpg">
-                    <img class="main-banner-pic" src="https://picsum.photos/300/200/?random=10">
-                    <img class="main-banner-pic" src="https://picsum.photos/300/200/?random=9">
+                    <img class="main-banner-pic" src="./img/shutterstock_583591807.jpg">
+                    <img class="main-banner-pic" src="./img/shutterstock_1431693452.jpg">
                 <!-- </div> -->
 
                 <div class="main-banner-title">
@@ -419,15 +352,15 @@
                 <ul class="footer-nav-social">
                     <li><h3>官方社群</h3></li>
                     <li><a href="" title="capay-facebook">
-                        <img src="./img/fb_facebook logo_icon.png">
+                        <img src="./img/fb_facebook logo_icon.jpg">
                     </a></li>
 
                     <li><a href="" title="capay-teitter">
-                        <img src="./img/twitter logo_icon.png">
+                        <img src="./img/twitter logo_icon.jpg">
                     </a></li>
 
                     <li><a href="" title="capay-youtube">
-                        <img src="./img/yt_youtube logo_icon.png">
+                        <img src="./img/yt_youtube logo_icon.jpg">
                     </a></li>
                 </ul>
                 <ul class="footer-nav-app">

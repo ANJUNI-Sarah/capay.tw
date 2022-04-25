@@ -956,7 +956,7 @@ animation-name: in;
     }
 
     .about-us-wrap:hover{
-        background-color: rgba(0, 0, 0, 0.4)
+        background-color: rgba(0, 0, 0, 0)
 
     }
 
@@ -1011,7 +1011,7 @@ animation-name: in;
     }
 
     .merchant-wrap:hover{
-        background-color: rgba(0, 0, 0, 0.4)
+        background-color: rgba(0, 0, 0, 0)
 
     }
 

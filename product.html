@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="./css/product.css">
     <link rel="stylesheet" type="text/css" href="./css/nav_footer.css">
     <script src="./js/jquery-3.6.0.js"></script>
+    <script src="./js/nav.js"></script>
     <script src="./js/product.js"></script>
 
 </head>
@@ -43,9 +44,9 @@
     <header class="main-header">
         <div class="main-header-wrap">
             <div class="main-header-logo">
-                <a href="./index.html">
+                <h1><a href="./index.html">
                     <img src="./img/personl-web-logo3.png">
-                </a>
+                </a></h1>
             </div>
             <nav class="main-nav">
                 <ul class="main-nav-list">
@@ -56,8 +57,23 @@
                     <li id="shopbox">店家專區</li>
                 </ul>
             </nav>
+            <div class="hb">
+                <img src="https://img.icons8.com/external-jumpicon-line-ayub-irawan/32/000000/external-hamburger-basic-ui-jumpicon-line-jumpicon-line-ayub-irawan.png"/>
+            </div>
         </div>
     </header>
+
+    <div class="mobile-main-nav-bg">
+        <div class="mobile-main-nav">
+            <ul class="hb-main-nav-list">
+                <li><a href="./product.html">產品介紹</a></li>
+                <li><a href="./events.html">優惠活動</a></li>
+                <li><a href="./shopmap.html">商家地圖</a></li>
+                <li><a href="./customer-service.html">常見問題</a></li>
+                <li id="shopbox2">店家專區</li>
+            </ul>
+        </div>
+    </div>
 
     
     <section class="product-banner">
@@ -72,48 +88,44 @@
 
     
     <div class="sign-up">
-        <div class="sign-up-wrap">
+        <div class="sign-up-wrap ">
             <div class="sign-up-wrap-msg">
                 <header class="sign-up-header">
-                    <h1>簡單即可註冊CA PAY</h1>
+                    <h1 class="fadeTo">簡單即可註冊CA PAY</h1>
+                    <p class="fadeTo">3步驟完成開通，輕輕鬆鬆加入，開啟使用新體驗!
+                    </p>
                 </header>
                 <div class="sign-up-content">
-                    <div class="sign-up-content-msg">
-                        <div class="sign-up-content-msg-pic">
-                        </div>
-                        <div class="sign-up-content-msg-text">
+                    <div class="sign-up-content-msg ">
+                        <div class="sign-up-content-msg-text  circle">
                             <div class="sign-up-content-msg-num">
                                 1
                             </div>
-                            <h2>下載APP</h2>
-                            <p>依照步驟，<br>同意條款、並完成簡訊驗證。</p>
+                            <h2 class="fadeTo">下載APP</h2>
+                            <p class="fadeTo">依照步驟，<br>同意條款、並完成簡訊驗證。</p>
                         </div>
                     </div>
                     <div class="service-content-msg">
-                        <div class="service-content-msg-pic">
-                        </div>
-                        <div class="sign-up-content-msg-text">
-                            <div class="sign-up-content-msg-num">
-                                3
-                            </div>
-                            <h2>綁定成功</h2>
-                            <p>購買時使用face id<br>或輸入密碼，<br>即可出示條碼付款。</p>
-                        </div>
-                    </div>
-                    <div class="sign-up-content-msg">
-                        <div class="sign-up-content-msg-pic">
-                        </div>
-                        <div class="sign-up-content-msg-text">
+                        <div class="sign-up-content-msg-text  circle">
                             <div class="sign-up-content-msg-num">
                                 2
                             </div>
-                            <h2>開通帳號</h2>
-                            <p>可使用金融卡、信用卡，<br>實名驗證後綁定於CA PAY。</p>
+                            <h2 class="fadeTo">開通帳號</h2>
+                            <p class="fadeTo">可使用金融卡、信用卡，<br>實名驗證後綁定於CA PAY。</p>
+                        </div>
+                    </div>
+                    <div class="sign-up-content-msg">
+                        <div class="sign-up-content-msg-text  circle">
+                            <div class="sign-up-content-msg-num">
+                                3
+                            </div>
+                            <h2 class="fadeTo">綁定成功</h2>
+                            <p class="fadeTo">購買時使用face id<br>或輸入密碼，<br>即可出示條碼付款。</p>
                         </div>
                     </div>
                 </div>
 
-                <p class="sign-up-text">完成註冊帳號，享受行動支付的便利<br>
+                <p class="sign-up-text fadeTo">完成註冊帳號，享受行動支付的便利<br>
                     可串接銀行帳戶及使用儲值功能，
                  暢遊無現金的便利生活!</p>
             </div>
@@ -121,18 +133,16 @@
     </div>
 
 
-    <div class=".about-us">
+    <div class="about-us">
         <div class="about-us-wrap">
-            <img class="about-us-pic" src="./img/shutterstock_583591807.jpg">
+            <!-- <img class="about-us-pic" src="./img/shutterstock_583591807.jpg"> -->
+            <iframe width="560" height="315" class="about-us-pic"src="https://www.youtube.com/embed/UMq8a1y5v6A?rel=0&autoplay=1&loop=1&mute=1&playlist=UMq8a1y5v6A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <div class="about-us-wrap-msg">
                     <header class="about-us-header">
-                        <h1>合作銀行市占第一</h1>
-                        <p>支援各大銀行金融卡、信用卡<br>
+                        <h1 class="fadeTo">合作銀行市占第一</h1>
+                        <p class="fadeTo">支援各大銀行金融卡、信用卡<br>
                         配合銀行活動，不只服務，還要優惠!</p>
                     </header>
-                    <form action="">
-                        <input type="submit" value="查看合作銀行" >
-                    </form>
                 </div>
         </div>
     </div>
@@ -141,28 +151,50 @@
     <div class="user">
         <div class="user-wrap">
             <header class="user-header">
-                <h2>顧客心聲</h2>
-                    <p>聽聽他們怎麼說......<br>不論是誰，都可以透過CA PAY，找到最適合自己的消費方式!</p>
+                <h2 class="fadeTo">顧客心聲</h2>
+                    <p class="fadeTo">聽聽他們怎麼說<br>不論是誰，都可以透過CA PAY，找到最適合自己的消費方式!</p>
             </header>
-            <div class="user-content">
+            <div class="user-content fadeTo">
                 <div class="user-content-item">
                     <img src="./img/product-user-01.jpg">
-                    <p class="user-content-member">愛好研究理財的小資女</p>
-                    <p class="user-content-feedback">下載CA PAY APP出門完全不需帶錢包，讓我可以輕便逛街，且回饋滿滿、用CA PAY幫自己加薪，往財富自由又更進一步!</p>
+                    <div class="user-msg-content">
+                        <p class="user-content-member">愛好研究理財的小資女</p>
+                        <div class="user-content-feedback-msg">
+                            <div class="H"></div>
+                            <div class="user-content-feedback-box">
+                                <p class="user-content-feedback">下載CA PAY APP出門完全不需帶錢包，讓我可以輕便逛街，且回饋滿滿、用CA PAY幫自己加薪，往財富自由又更進一步!</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="user-content-item">
                     <img src="./img/product-user-02.jpg">
-                    <p class="user-content-member">支持在地店家的吳伯伯</p>
-                    <p class="user-content-feedback">附近有很多認識的鄰居朋友出來創業，他們說CA PAY的服務優質、簡單容易上手，體恤小商家的辛苦，使用CA PAY就是支持在地商家!</p>
+                    <div class="user-msg-content">
+                        <p class="user-content-member">支持在地店家的吳伯伯</p>
+                        <div class="user-content-feedback-msg">
+                            <div class="H"></div>
+                            <div class="user-content-feedback-box">
+                                <p class="user-content-feedback">附近有很多認識的鄰居朋友出來創業，他們說CA PAY的服務優質、容易上手，體恤小商家的辛苦，使用CA PAY就是支持在地商家!</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="user-content-item">
                     <img src="./img/product-user-03.jpg">
-                    <p class="user-content-member">初學網購的主婦陳太太</p>
-                    <p class="user-content-feedback">最近疫情不方便出門，用CA PAY操作真的簡單好多，讓我也能夠跟上年輕人的趨勢，之後不再需要大太陽去買生活用品，有更多力氣照顧家人。</p>
+                    <div class="user-msg-content">
+                        <p class="user-content-member">初學網購的主婦陳太太</p>
+                        <div class="user-content-feedback-msg">
+                            <div class="H"></div>
+                            <div class="user-content-feedback-box">
+                                <p class="user-content-feedback">最近疫情不方便出門，用CA PAY操作真的簡單好多，讓我也能夠跟上年輕人的趨勢，之後不再需要大太陽去買生活用品，有更多力氣照顧家人。</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
 
 
     <footer class="main-footer">
@@ -202,15 +234,15 @@
                 <ul class="footer-nav-social">
                     <li><h3>官方社群</h3></li>
                     <li><a href="" title="capay-facebook">
-                        <img src="./img/fb_facebook logo_icon.png">
+                        <img src="./img/fb_facebook logo_icon.jpg">
                     </a></li>
 
                     <li><a href="" title="capay-teitter">
-                        <img src="./img/twitter logo_icon.png">
+                        <img src="./img/twitter logo_icon.jpg">
                     </a></li>
 
                     <li><a href="" title="capay-youtube">
-                        <img src="./img/yt_youtube logo_icon.png">
+                        <img src="./img/yt_youtube logo_icon.jpg">
                     </a></li>
                 </ul>
                 <ul class="footer-nav-app">

@@ -9,8 +9,8 @@
     <link rel="stylesheet" type="text/css" href="./css/customer-service.css">
     <link rel="stylesheet" type="text/css" href="./css/nav_footer.css">
     <script src="./js/jquery-3.6.0.js"></script>
+    <script src="./js/nav.js"></script>
     <script src="./js/customer-service.js"></script>
-    
 </head>
 <body>
     <div id="login-lightBox">
@@ -45,7 +45,7 @@
             <div class="main-header-logo">
                 <h1><a href="./index.html">
                     <img src="./img/personl-web-logo3.png">
-                </h1></a>
+                </a></h1>
             </div>
             <nav class="main-nav">
                 <ul class="main-nav-list">
@@ -56,13 +56,28 @@
                     <li id="shopbox">店家專區</li>
                 </ul>
             </nav>
+            <div class="hb">
+                <img src="https://img.icons8.com/external-jumpicon-line-ayub-irawan/32/000000/external-hamburger-basic-ui-jumpicon-line-jumpicon-line-ayub-irawan.png"/>
+            </div>
         </div>
     </header>
 
+    <div class="mobile-main-nav-bg">
+        <div class="mobile-main-nav">
+            <ul class="hb-main-nav-list">
+                <li><a href="./product.html">產品介紹</a></li>
+                <li><a href="./events.html">優惠活動</a></li>
+                <li><a href="./shopmap.html">商家地圖</a></li>
+                <li><a href="./customer-service.html">常見問題</a></li>
+                <li id="shopbox2">店家專區</li>
+            </ul>
+        </div>
+    </div>
 
 
     <main class="customer-service">
         <div class="qa-search">
+            <img class="bg" src="../img/customer-service-banner.jpg" alt="">
             <div class="container">
                 <h1>常見問題</h1>
                 <p>Hi,您需要的協助是?</p>
@@ -75,7 +90,7 @@
 
         <div class="qa-category">
             <div class="container">
-                <ul class="qa-category-wrap">
+                <ul class="qa-category-wrap fadeTo">
                     <a href=""><li class="qa-category-item">
                         <h2>註冊會員</h2>
                     </li></a>
@@ -94,8 +109,8 @@
 
         <div class="frequently-questions">
             <div class="container">
-                <h2>常見疑問</h2>
-                <ul class="frequently-questions-wrap">
+                <h2 class="fadeTo">常見疑問</h2>
+                <ul class="frequently-questions-wrap fadeTo">
                     <li class="frequently-questions-item">
                         <a href="">
                             <p>應該如何註冊CA PAY會員?</p>
@@ -169,15 +184,15 @@
                 <ul class="footer-nav-social">
                     <li><h3>官方社群</h3></li>
                     <li><a href="" title="capay-facebook">
-                        <img src="./img/fb_facebook logo_icon.png">
+                        <img src="./img/fb_facebook logo_icon.jpg">
                     </a></li>
 
                     <li><a href="" title="capay-teitter">
-                        <img src="./img/twitter logo_icon.png">
+                        <img src="./img/twitter logo_icon.jpg">
                     </a></li>
 
                     <li><a href="" title="capay-youtube">
-                        <img src="./img/yt_youtube logo_icon.png">
+                        <img src="./img/yt_youtube logo_icon.jpg">
                     </a></li>
                 </ul>
                 <ul class="footer-nav-app">

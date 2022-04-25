@@ -1,52 +1,4 @@
 
-//login//
-    $(document).ready(function(){
-        $('#shopbox').click(function(){
-            $('#login-lightBox').css('display','block')
-        });
-        $('#cancel,#login-lightBox').click(function(){
-            $('#login-lightBox').css('display','none')
-        });
-        $('#lightBox').click(function(lightBox){
-            lightBox.stopPropagation();
-        })
-    })
-
-
-//hb//
-    $(document).ready(function(){
-        $('.hb').click(function(){
-            if($('.mobile-main-nav-bg').css('display')== 'none'){
-                $('.mobile-main-nav-bg').css('display','block');
-                $('.mobile-main-nav').animate({left:0});}
-            else if($('.mobile-main-nav-bg').css('display')== 'block'){
-                $('.mobile-main-nav').animate({left:-2000});
-                setTimeout(function(){
-                    $('.mobile-main-nav-bg').css('display','none')
-                }, 500);;
-            }
-        })
-    })
-    
-
-//hb-login//
-    $(document).ready(function(){
-        $('#shopbox2').click(function(){
-            $('#login-lightBox').css('display','block')
-            $('.mobile-main-nav-bg').css('display','none')
-            $('.mobile-main-nav').css({left:-2000})
-        });
-        $('#cancel,#login-lightBox').click(function(){
-            $('#login-lightBox').css('display','none')
-        });
-        $('#lightBox').click(function(lightBox){
-            lightBox.stopPropagation();
-        })
-
-    })
-
-
-
 //banner-change//
         let arr=new Array('1','2','3')
         let t=arr.length;
@@ -59,8 +11,35 @@
             $('.main-banner-pic:nth-child('+arr[j%arr.length]+')').removeClass('fade-in')
             j++;
         }
-        time=setInterval(change,7000);
+        time=setInterval(change,3000);
         
 
+//animation//
+        function fadeTo(){
+            let els=$('.fadeTo')
 
-    
+            for(let j=0; j<els.length;j++){
+                if(els.eq(j).offset().top<=$(window).scrollTop()+$(window).height()) {
+                    els.eq(j).fadeTo(300,1)}
+                else{els.eq(j).css(
+                    'opacity', '0'
+                )}
+            }
+        }
+
+        // function fadeOut(){
+        //     let els=$('.fadeOut')
+
+        //     for(let j=0; j<els.length;j++){
+        //         if(els.eq(j).offset().top<=$(window).scrollTop()+$(window).height()) {
+        //             els.eq(j).fadeTo(1000,1)
+        //         }
+        //         else{els.eq(j).css(
+        //             'opacity', '0'
+        //         )}
+        //     }
+        // }
+
+
+        $(window).scroll(fadeTo)
+        // $(window).scroll(fadeOut)
