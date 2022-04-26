@@ -389,11 +389,13 @@ input:hover{
     
     .sign-up{
         padding:50px 0px;
+        ;
     }
     
     .sign-up-wrap{
         width: 100%;
         margin: auto;
+        
     }
     
     .sign-up-header h1{
@@ -412,6 +414,7 @@ input:hover{
     }
     
     .sign-up-content{
+       
         padding: 0px 20px;
         background-image: url('../img/bg-img-phone.jpg');
         background-size: 100%;
@@ -437,6 +440,7 @@ input:hover{
     
     
     .sign-up-content-msg-text{
+        
         position: relative;
         display: inline-block;
         background-color: #ffff;
@@ -499,25 +503,18 @@ input:hover{
     
     /*  */
     .about-us{
+        
         padding: 100px 0px;
         
     }
     
     
     .about-us-wrap{
+        width: 100%;
         position: relative;
         background: linear-gradient(270deg,rgb(0, 0, 0,0),rgb(0, 0, 0,0.5));
     }
     
-    .about-us-pic{
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        z-index: -2;
-        object-fit: cover;
-    }
     
     .about-us-wrap-msg{
         width: 100%;
@@ -528,6 +525,7 @@ input:hover{
     
     
     .about-us-header{
+        padding: 10px;
         color: #ffff;
     }
     
@@ -552,6 +550,7 @@ input:hover{
     
     .user{
         padding: 100px 0px 200px 0px;
+        
     }
     
     
@@ -592,7 +591,7 @@ input:hover{
     
     .user-content-item{
         display: flex;
-        margin: 10px;
+        margin: 10px 0px;
         padding:50px 5px;
         width: 100%
     
@@ -618,21 +617,13 @@ input:hover{
     
     .user-content-feedback-msg{
         position: relative;
-        width: 180px;
+        width: 220px;
     }
     
     
     .H{
         display: none;
-        position: absolute;
-        top: 20px;
-        left:-25px; 
-        z-index: 1;
-        border-color: transparent rgb(255, 255, 255) transparent transparent ;
-        border-style: solid ;
-        border-width: 20px;
-        height: 0px;
-        width: 0px;
+    
     }
     
     .user-content-feedback-box{
@@ -647,6 +638,8 @@ input:hover{
     
     
     .user-content-feedback{
+
+        
         line-height: 1.5;
         font-size: 14px;
         padding: 10px
