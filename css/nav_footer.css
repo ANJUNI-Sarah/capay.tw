@@ -506,7 +506,7 @@ hr{
     .copy-right{
         width: 100%;
         margin: auto;
-        font-size: 1x;
+        font-size: 5x;
         padding: 10px 0px;
         line-height: 1.5;
         
@@ -525,7 +525,7 @@ hr{
     .copy-right-document a{
         text-decoration: none;
         color: #ffff;
-        font-size: 1px;
+        font-size: 5px;
         padding: 0px 10px;
     }
 
